@@ -26,11 +26,12 @@ def search(search_query):
 def int_type(value):
     print(value + 1)
     return "correct"
-@app.route("/float/<float:value>"):
+@app.route("/float/<float:value>")
 def float_type(value):
     print(value + 1)
     return "correct"
-@app.route("/path/<path:value>"):
+@app.route("/path/<path:value>")
+def path_type(value):
     print(value)
     return "correct"
 
