@@ -35,6 +35,14 @@ def path_type(value):
     print(value)
     return "correct"
 
+# trying out response object mods
+@app.route("/name/<name>")
+def indx (name):
+    if name.lower() == "michał":
+        return f"Hello, {name}", 200
+    else:
+        return f"Not Found", 404
+
 # start the development server using the run() method
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=80)
