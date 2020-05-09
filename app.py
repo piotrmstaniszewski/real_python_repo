@@ -6,9 +6,11 @@ from flask import Flask
 # create application object
 app = Flask(__name__)
 
+# error handling
+app.config["DEBUG"] = True
+
 # use decorator pattern
 # to link view function to an url
-
 @app.route("/")
 @app.route("/hello")
 
